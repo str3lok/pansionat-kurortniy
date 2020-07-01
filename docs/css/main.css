@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900;0,500;1,500&family=Roboto:wght@300;400;500;700;900&display=swap");
 @font-face {
   font-family: 'freesetnormal';
   src: url("../fonts/freeset-webfont.eot");
@@ -13231,6 +13230,10 @@ input {
 /*.navbar*/
 .navbar {
   background: #a0b043; }
+  .navbar .uk-navbar-left {
+    float: left; }
+  .navbar .uk-navbar-right {
+    float: right; }
   .navbar .uk-navbar-container {
     background: none; }
   .navbar .uk-navbar-nav > li > a {
@@ -13379,9 +13382,9 @@ input {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  -webkit-align-self: end;
+  -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
-          align-self: end; }
+          align-self: flex-end; }
   .about-house-img-small img {
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
