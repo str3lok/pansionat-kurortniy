@@ -165,7 +165,21 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor */ "./src/js/vendor.js");
 /* eslint-disable no-new */
- // если устройство планшет показываем элементы по клику т.к. ховера на тач устройствах нет
+ // открыть меню на мобильном
+
+$('.navbar-toggle-js').on('click', function (e) {
+  e.preventDefault();
+  $('html').addClass('htmlFix');
+  $('body').addClass('navFix');
+  $('.navbar').fadeIn();
+}); // закрыть меню на мобильном
+
+$('.nav-close-js').on('click', function (e) {
+  e.preventDefault();
+  $('html').removeClass('htmlFix');
+  $('body').removeClass('navFix');
+  $('.navbar').fadeOut();
+}); // если устройство планшет показываем элементы по клику т.к. ховера на тач устройствах нет
 
 if ($('html').hasClass('is-device-tablet') || $('html').hasClass('is-device-mobile')) {
   // смена валюты на планшете
@@ -223,6 +237,19 @@ function loadPage() {
 
 
 window.addEventListener("load", loadPage);
+
+function resizePage() {
+  var windowWidth = $(window).outerWidth();
+
+  if (windowWidth >= 768) {
+    $('html').removeClass('htmlFix');
+    $('body').removeClass('navFix');
+    $('.navbar').removeAttr('style');
+  }
+} //end resizePage
+
+
+window.addEventListener("resize", resizePage);
 
 /***/ }),
 

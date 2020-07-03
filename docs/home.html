@@ -6,20 +6,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Курортный пансионат для пожилых</title>
 		<link rel="icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/main.css?v=1593704379081">
+		<link rel="stylesheet" type="text/css" href="css/main.css?v=1593798036288">
 	</head>
 	<body>
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5 col-sm-4">
-						<div class="logo"><a href="home.html"><span class="logo-icon"><img class="img-responsive" src="images/logo-icon.png" alt="#"></span><span class="logo-text"><img class="img-responsive" src="images/logo-text.png" alt="#"></span></a></div>
+					<div class="col-lg-5 col-sm-4 col-xs-12">
+						<div class="logo"><a href="home.html"><span class="logo-icon">
+									<picture>
+										<source media="(max-width: 767px)" type="image/jpg" srcset="images/logo-icon-white.png"><img class="img-responsive" src="images/logo-icon.png" alt="#">
+									</picture></span><span class="logo-text">
+									<picture>
+										<source media="(max-width: 767px)" type="image/jpg" srcset="images/logo-text-white.png"><img class="img-responsive" src="images/logo-text.png" alt="#">
+									</picture></span></a></div>
+						<div class="navbar-toggle navbar-toggle-js xs-visible"><i></i><i></i><i></i></div>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 xs-hidden">
 						<div class="head-phone"><a href="tel:+78124561136">+7(812) 456 - 11 - 36</a></div>
 						<div class="head-adress">поселок Песочный, <br> улица Ленинградская, д. 83, корп. 3</div>
 					</div>
-					<div class="col-lg-3 col-sm-4">
+					<div class="col-lg-3 col-sm-4 xs-hidden">
 						<ul class="head-soc">
 							<li><a class="link-vk" href="#" target="_blank"><img src="images/sprites/svg/icon-vk.svg" width="26" height="16" alt="#"></a></li>
 							<li><a class="link-fb" href="#" target="_blank"><img src="images/sprites/svg/icon-fb.svg" width="27" height="27" alt="#"></a></li>
@@ -38,6 +45,7 @@
 			</div>
 		</header>
 		<div class="navbar">
+			<div class="btn-close-nav nav-close-js xs-visible"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -46,7 +54,7 @@
 								<ul class="uk-navbar-nav">
 									<li><a href="#">Главная</a></li>
 									<li><a href="#">О Курортном</a></li>
-									<li class="item-parent"><a href="#">Цены и оформление</a>
+									<li class="item-parent"><a href="#"><span>Цены и оформление</span></a>
 										<div class="uk-navbar-dropdown navbar-dropdown-style">
 											<ul class="uk-nav uk-navbar-dropdown-nav">
 												<li><a href="#">Основные услуги</a></li>
@@ -59,6 +67,10 @@
 									<li><a href="#">Медиа</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
+							</div>
+							<div class="xs-visible clear">
+								<div class="head-phone"><a href="tel:+78124561136">+7(812) 456 - 11 - 36</a></div>
+								<div class="head-adress">поселок Песочный, <br> улица Ленинградская, д. 83, корп. 3</div>
 							</div>
 							<div class="uk-navbar-right"><a class="btn-expert" href="#"><span class="icon-idea"></span><span class="btn-expert-text">Экспертное мнение</span></a></div>
 						</nav>
@@ -127,18 +139,23 @@
 				<div class="about-house-section">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-6 about-col">
+							<div class="col-sm-6 col-xs-12 about-col">
 								<div class="about-house-content">
 									<div class="title-box">
 										<h2><span>Первый в России пансионат</span></h2>
 										<div class="title-box-child">построенный по специальному проекту</div>
 									</div>
 									<p>В пансионате всё продумано для удобства пожилых людей и тех, кто им помогает. В уютных двухместных комнатах - отдельные санузлы с душем и функциональные кровати.</p>
-								</div><a class="btn-green btn-more-news" href="#">Узнать больше</a>
+								</div><a class="btn-green btn-more-news xs-hidden" href="#">Узнать больше</a>
 							</div>
-							<div class="col-sm-6 about-col">
+							<div class="col-sm-6 col-xs-12 about-col">
 								<div class="about-house-img-big"><img class="img-responsive" src="images/img-big.jpg" alt="#"></div>
-								<div class="about-house-img-small"><img class="img-responsive" src="images/img-small.jpg" alt="#"></div>
+								<div class="about-house-img-small">
+									<picture>
+										<source media="(max-width: 767px)" type="image/jpg" srcset="images/dote.png"><img class="img-responsive" src="images/img-small.jpg" alt="#">
+									</picture>
+								</div>
+								<div class="width-100 xs-visible"><a class="btn-green btn-more-news" href="#">Узнать больше</a></div>
 							</div>
 						</div>
 					</div>
@@ -146,8 +163,8 @@
 				<div class="clear"></div>
 				<div class="news-home-section">
 					<div class="container">
-						<div class="row d-flex flex-wrap">
-							<div class="col-sm-6 d-flex">
+						<div class="row d-flex flex-wrap news-home-row">
+							<div class="col-sm-6 col-xs-12 d-flex">
 								<ul class="news-tabs-content uk-switcher">
 									<li class="news-tab-item uk-active">
 										<div class="news-tab-box">
@@ -186,7 +203,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-sm-6 d-flex">
+							<div class="col-sm-6 col-xs-12 d-flex">
 								<div class="news-home-list">
 									<div class="title-box">
 										<h2><span>Новости:</span></h2>
@@ -304,7 +321,7 @@
 		</footer>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
 		<!-- include pug/modules/modal-->
-		<script src="js/vendor.js?v=1593704379081"></script>
-		<script src="js/main.js?v=1593704379081"></script>
+		<script src="js/vendor.js?v=1593798036288"></script>
+		<script src="js/main.js?v=1593798036288"></script>
 	</body>
 </html>
