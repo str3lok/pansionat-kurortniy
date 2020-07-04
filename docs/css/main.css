@@ -12610,7 +12610,7 @@ h3, .h3 {
   display: block;
   position: absolute; }
 
-.d-block, .rb-select, header, .wrapper, .navbar, .content-page, .triger-section, .about-house-section, .gallery-home-section, footer {
+.d-block, .rb-select, header, .wrapper, .navbar, .content-page, .triger-section, .about-house-section, .gallery-home-section, .online-home, footer {
   display: block;
   float: left;
   width: 100%; }
@@ -13535,6 +13535,10 @@ header {
      -moz-border-radius: 5px;
           border-radius: 5px;
   overflow: hidden; }
+  .gallery-box img {
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px; }
   .gallery-box picture {
     display: -webkit-box;
     display: -webkit-flex;
@@ -13995,6 +13999,16 @@ footer {
     padding-right: 10px; }
   .xs-hidden {
     display: none !important; }
+  .d-flex-xs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .flex-wrap-xs {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .row {
     margin-left: -10px;
     margin-right: -10px; }
@@ -14004,7 +14018,16 @@ footer {
   header {
     background: #a0b043;
     padding-top: 10px;
-    padding-bottom: 8px; }
+    padding-bottom: 8px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    height: 59px; }
+  .wrapper {
+    margin-bottom: 56px;
+    padding-top: 59px; }
   .logo-icon {
     width: 39px;
     margin-right: 7px; }
@@ -14209,6 +14232,9 @@ footer {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
+  .about-house-content h2, .about-house-content .h2 {
+    font-size: 18px;
+    line-height: 22px; }
   h2, .h2 {
     font-size: 18px;
     line-height: 22px; }
@@ -14257,12 +14283,100 @@ footer {
     font-size: 20px; }
   .news-home-section {
     margin-top: 41px;
-    margin-bottom: 63px; }
+    margin-bottom: 26px; }
   .news-tabs-content {
     margin-top: 12px;
     min-height: 1px; }
   .news-tab-date {
-    margin-top: 18px; } }
+    margin-top: 18px; }
+  .gallery-box picture {
+    height: auto;
+    max-width: 585px;
+    margin: 0 auto; }
+  .row-two .d-flex {
+    height: auto;
+    width: 100%; }
+  .gallery-box-title {
+    height: auto;
+    width: 100%;
+    max-width: 585px;
+    margin: auto;
+    padding: 25px 16px 31px; }
+  .row-two, .col-two {
+    width: 100%;
+    margin: 0; }
+    .row-two .d-flex, .col-two .d-flex {
+      padding: 0; }
+  .gallery-col, .col-two .d-flex {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .row-two .d-flex + .d-flex {
+    margin-top: 10px; }
+  .col-two .d-flex:first-child {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+       -moz-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .gallery-home-section {
+    margin-bottom: 39px; }
+  .online-home .row {
+    width: 100%;
+    margin: 0; }
+  .online-box {
+    margin-top: 19px; }
+  .head-email a {
+    font-size: 12px;
+    line-height: 12px; }
+  .head-adress {
+    font-size: 12px;
+    line-height: 14px; }
+  .head-soc li a {
+    width: 46px;
+    height: 46px;
+    -webkit-border-radius: 23px;
+       -moz-border-radius: 23px;
+            border-radius: 23px; }
+  .head-soc {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .footer-soc li {
+    margin: 0 8px; }
+  .footer-search {
+    margin-top: 36px;
+    margin-bottom: 38px; }
+    .footer-search form {
+      width: 100%; }
+  .footer-soc {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+       -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0; }
+  footer {
+    padding: 36px 0 50px; }
+    footer .row {
+      width: 100%;
+      margin: 0; }
+    footer .head-phone {
+      margin-top: 24px; }
+      footer .head-phone a {
+        padding-left: 30px; }
+    footer .head-email {
+      float: left;
+      margin: 12px 0 15px 0; }
+      footer .head-email a {
+        padding-left: 30px; }
+        footer .head-email a::before {
+          left: 1px; }
+    footer .head-adress {
+      padding-left: 30px; }
+      footer .head-adress::before {
+        left: 1px; } }
 
 /* END 767px */
 
