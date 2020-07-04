@@ -14376,7 +14376,20 @@ footer {
     footer .head-adress {
       padding-left: 30px; }
       footer .head-adress::before {
-        left: 1px; } }
+        left: 1px; }
+  .head-soc li a.link-email img,
+  .head-soc li a.link-vk img {
+    width: 27px;
+    height: 27px; }
+  .head-soc li a.link-fb img {
+    width: 26px;
+    height: 28px; }
+  .head-soc li a.link-ok img {
+    width: 27px;
+    height: 30px; }
+  .head-soc li a.link-inst img {
+    width: 26px;
+    height: 26px; } }
 
 /* END 767px */
 
