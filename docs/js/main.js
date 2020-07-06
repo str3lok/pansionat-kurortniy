@@ -179,60 +179,46 @@ $('.nav-close-js').on('click', function (e) {
   $('html').removeClass('htmlFix');
   $('body').removeClass('navFix');
   $('.navbar').fadeOut();
+}); // показать/скрыть отзыв
+
+$('.review-js').on('click', function (e) {
+  e.preventDefault();
+  var windowWidth = $(window).outerWidth();
+  var parentBox = $(this).closest('.review-list-content');
+  var reviewHeight = $(parentBox).find('.review-text').outerHeight();
+  var reviewText = $(parentBox).find('.review-list-text');
+  var textMinHeight;
+
+  if (windowWidth >= 1240) {
+    textMinHeight = 185;
+  } else {
+    textMinHeight = 110;
+  }
+
+  if ($(this).hasClass('is-active')) {
+    $(this).text('Читать полностью').removeClass('is-active');
+    $(reviewText).animate({
+      'height': textMinHeight + 'px'
+    }, 300, function () {
+      $(reviewText).removeAttr('style');
+    });
+  } else {
+    $(this).text('Скрыть отзыв').addClass('is-active');
+    $(reviewText).css({
+      'height': textMinHeight + 'px',
+      'max-height': 'none'
+    }).animate({
+      'height': reviewHeight + 'px'
+    }, 300);
+  }
 }); // если устройство планшет показываем элементы по клику т.к. ховера на тач устройствах нет
 
-if ($('html').hasClass('is-device-tablet') || $('html').hasClass('is-device-mobile')) {
-  // смена валюты на планшете
-  $('.footer__currency-btn').on('click', function (event) {
-    var $link = $(event.currentTarget);
-    event.preventDefault();
-    var $parentLink = $link.parent();
-
-    if (!$($parentLink).hasClass('is-active')) {
-      $parentLink.addClass('is-active');
-    } else {
-      $parentLink.removeClass('is-active');
-    }
-
-    event.stopPropagation();
-  }); // end .footer__currency-btn
-  // отмена закрытия блока выбор валюты
-
-  $('.currency__select').on('click', function (event) {
-    event.stopPropagation();
-  }); // смена языка на планшете
-
-  $('.lang__btn').on('click', function (event) {
-    var $link = $(event.currentTarget);
-    event.preventDefault();
-    var $parentLink = $link.parent();
-
-    if (!$($parentLink).hasClass('is-active')) {
-      $parentLink.addClass('is-active');
-    } else {
-      $parentLink.removeClass('is-active');
-    }
-
-    event.stopPropagation();
-  }); // отмена закрытия блока выбор языка
-
-  $('.lang__select').on('click', function (event) {
-    event.stopPropagation();
-  }); // общее условие по закрытию всех блок на планшете, которые показываются по ховеру
-
-  $('body').on('click', function () {
-    $('.footer__currency').removeClass('is-active');
-    $('.header__lang').removeClass('is-active'); // - код пишем выше
-  });
-} //- end is-device-tablet
+if ($('html').hasClass('is-device-tablet') || $('html').hasClass('is-device-mobile')) {} //- end is-device-tablet
 // добавляем скроллбар при фиксированной высоте страницы
 
 
 function loadPage() {
-  try {// if ($('.wrapper').hasClass('wrapper__scroll')) {
-    //   $('.wrapper').addClass('pageLoaded');
-    // }
-  } catch (e) {}
+  try {} catch (e) {}
 } //end loadPage
 
 
@@ -245,6 +231,12 @@ function resizePage() {
     $('html').removeClass('htmlFix');
     $('body').removeClass('navFix');
     $('.navbar').removeAttr('style');
+  } // страница отзывы
+
+
+  if ($('.reviews-list-section')) {
+    $('.review-list-text').removeAttr('style');
+    $('.review-js').text('Читать полностью').removeClass('is-active');
   }
 } //end resizePage
 

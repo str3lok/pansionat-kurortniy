@@ -12610,7 +12610,7 @@ h3, .h3 {
   display: block;
   position: absolute; }
 
-.d-block, .rb-select, header, .wrapper, .navbar, .content-page, .triger-section, .about-house-section, .gallery-home-section, .online-home, footer, .news-main-img, .title-section, .news-list-section, .news-list, .news-list-title, .news-list-date, .news-list-text, .pagination-section {
+.d-block, .rb-select, header, .wrapper, .navbar, .content-page, .triger-section, .about-house-section, .gallery-home-section, .online-home, footer, .news-main-img, .title-section, .news-list-section, .news-list, .news-list-title, .news-list-date, .news-list-text, .pagination-section, .reviews-list-section, .review-list, .review-list-info, .review-list-author, .review-list-date, .review-list-text, .review-list-action {
   display: block;
   float: left;
   width: 100%; }
@@ -13692,6 +13692,9 @@ footer {
 
 /*PAGE HOME END*/
 /*PAGE NEWS START*/
+.news-main-img {
+  height: 600px; }
+
 .title-section {
   background: #f9f9f8;
   padding: 63px 0;
@@ -13870,6 +13873,69 @@ footer {
     stroke: #969987 !important; }
 
 /*PAGE NEWS END*/
+/*PAGE REVIEWS START*/
+.reviews-list-section {
+  margin-top: 24px; }
+
+.review-item {
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 50px;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 22px 0; }
+
+.review-list-img {
+  min-width: 278px;
+  max-width: 278px;
+  margin-right: 30px;
+  margin-top: 6px; }
+  .review-list-img.avatar-no img {
+    border: 1px solid #e6e6e6; }
+  .review-list-img img {
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px; }
+
+.review-list-content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1px; }
+
+.review-list-author {
+  margin-bottom: 19px; }
+  .review-list-author h3 {
+    color: #2d330f;
+    font: bold 30px/34px "Montserrat", sans-serif; }
+
+.review-list-date {
+  color: #2d330f;
+  font: bold 18px/18px "Roboto", sans-serif;
+  margin-bottom: 11px; }
+
+.review-list-text {
+  overflow: hidden;
+  max-height: 185px; }
+
+.review-text {
+  display: inline-block; }
+
+.review-list-action {
+  margin-top: 5px; }
+  .review-list-action a {
+    color: #a0b043;
+    font: bold 18px/18px "Roboto", sans-serif; }
+    .review-list-action a:hover {
+      text-decoration: underline; }
+
+/*PAGE REVIEWS END*/
 .xs-visible {
   display: none !important; }
 
@@ -14205,13 +14271,42 @@ footer {
     .pagination-page li:first-child {
       margin-right: 12px; }
   .pagination-page .uk-icon svg {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .news-main-img {
+    height: 380px; }
+  .review-list-img {
+    max-width: 180px;
+    min-width: 180px;
+    margin-right: 20px;
+    margin-top: 4px; }
+  .review-list-author {
+    margin-bottom: 10px; }
+    .review-list-author h3 {
+      font-size: 18px;
+      line-height: 22px; }
+  .review-list-date {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 7px; }
+  .review-list-action a {
+    font-size: 12px;
+    line-height: 14px; }
+  .review-list-text {
+    max-height: 110px; }
+  .review-list-action {
+    margin-top: 8px; }
+  .review-item {
+    padding: 0 0 30px;
+    margin: 12px 0; }
+  .reviews-list-section {
+    margin-top: 4px; } }
 
 /* END 1239px */
 /* START 768px */
 @media (max-width: 768px) {
   header, .navbar, .about-house-section,
-  .news-home-section, .gallery-home-section, footer, .news-list-section {
+  .news-home-section, .gallery-home-section, footer,
+  .news-list-section, .reviews-list-section {
     padding-left: 15px;
     padding-right: 15px; }
   .wrapper {
@@ -14727,7 +14822,53 @@ footer {
       background: #722e77;
       height: 2px; }
   .pagination-section {
-    margin-top: 27px; } }
+    margin-top: 27px; }
+  .news-main-img {
+    height: 365px; }
+  .reviews-list-section {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .review-list-img {
+    max-width: 80px;
+    min-width: 80px;
+    margin: 0 0 0 -90px; }
+  .review-list-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 90px;
+    height: 84px; }
+  .review-list-author {
+    margin-bottom: 8px; }
+    .review-list-author h3 {
+      font-size: 12px;
+      line-height: 14px; }
+  .review-list-date {
+    margin-bottom: 0;
+    font-weight: normal; }
+  .review-list-text {
+    margin-top: 11px; }
+  .review-list-action {
+    text-align: right; }
+  .review-item {
+    margin: 15px 0; } }
 
 /* END 767px */
 
