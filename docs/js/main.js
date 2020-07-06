@@ -214,11 +214,33 @@ $('.review-js').on('click', function (e) {
 }); // если устройство планшет показываем элементы по клику т.к. ховера на тач устройствах нет
 
 if ($('html').hasClass('is-device-tablet') || $('html').hasClass('is-device-mobile')) {} //- end is-device-tablet
-// добавляем скроллбар при фиксированной высоте страницы
+
+
+function sliderInit(slider) {
+  $('.' + slider).removeClass('sliderLoading').removeClass('sliderDestroy').addClass('sliderLoaded');
+  $('.' + slider).slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+    arrows: true
+  });
+}
+
+function sliderDestroy(slider) {
+  $('.' + slider).slick('unslick').addClass('sliderDestroy');
+} // добавляем скроллбар при фиксированной высоте страницы
 
 
 function loadPage() {
-  try {} catch (e) {}
+  var windowWidth = $(window).outerWidth();
+
+  if ('.aricleSlideShow') {
+    if (windowWidth >= 768) {
+      sliderInit('aricleSlideShow');
+    }
+  } // try {
+  // } catch (e) {}
+
 } //end loadPage
 
 
@@ -237,6 +259,18 @@ function resizePage() {
   if ($('.reviews-list-section')) {
     $('.review-list-text').removeAttr('style');
     $('.review-js').text('Читать полностью').removeClass('is-active');
+  }
+
+  if ('.aricleSlideShow') {
+    if (windowWidth >= 768) {
+      if ($('.aricleSlideShow').hasClass('sliderDestroy')) {
+        sliderInit('aricleSlideShow');
+      }
+    }
+
+    if (windowWidth <= 767) {
+      sliderDestroy('aricleSlideShow');
+    }
   }
 } //end resizePage
 
@@ -262,6 +296,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var uikit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! uikit */ "./node_modules/uikit/dist/js/uikit.js");
 /* harmony import */ var uikit__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(uikit__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var slick_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! slick-slider */ "./node_modules/slick-slider/slick/slick.js");
+/* harmony import */ var slick_slider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_slider__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
