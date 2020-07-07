@@ -211,10 +211,17 @@ $('.review-js').on('click', function (e) {
       'height': reviewHeight + 'px'
     }, 300);
   }
-}); // если устройство планшет показываем элементы по клику т.к. ховера на тач устройствах нет
+}); // видео play
 
-if ($('html').hasClass('is-device-tablet') || $('html').hasClass('is-device-mobile')) {} //- end is-device-tablet
+$('.video-js').on('click', function (e) {
+  e.preventDefault();
 
+  if (!$(this).hasClass('videoLoaded')) {
+    $(this).addClass('videoLoaded');
+    var videoId = $(this).attr('data-video');
+    $(this).prepend('<iframe allowfullscreen="" allow="autoplay" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0&amp;autoplay=1"></iframe>');
+  }
+});
 
 function sliderInit(slider) {
   $('.' + slider).removeClass('sliderLoading').removeClass('sliderDestroy').addClass('sliderLoaded');
