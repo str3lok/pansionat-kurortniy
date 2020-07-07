@@ -12818,7 +12818,7 @@ h3, .h3 {
   display: block;
   position: absolute; }
 
-.d-block, .rb-select, header, .wrapper, .navbar, .content-page, .triger-section, .about-house-section, .gallery-home-section, .online-home, footer, .news-main-img, .title-section, .news-list-section, .news-list, .news-list-title, .news-list-date, .news-list-text, .pagination-section, .reviews-list-section, .review-list, .review-list-info, .review-list-author, .review-list-date, .review-list-text, .review-list-action, .article-news-section, .article-content, .article-slider-actions, .article-comments-title, .article-comments-list, .comment-list-item, .comments-form, .comments-form-content {
+.d-block, .rb-select, header, .wrapper, .navbar, .content-page, .triger-section, .about-house-section, .gallery-home-section, .online-home, footer, .news-main-img, .title-section, .news-list-section, .news-list, .news-list-title, .news-list-date, .news-list-text, .pagination-section, .reviews-list-section, .review-list, .review-list-info, .review-list-author, .review-list-date, .review-list-text, .review-list-action, .article-news-section, .article-content, .article-slider, .article-slider-actions, .article-comments-title, .article-comments-list, .comment-list-item, .comment-item-content, .comments-form, .comments-form-content {
   display: block;
   float: left;
   width: 100%; }
@@ -13907,6 +13907,8 @@ footer {
   background: #f9f9f8;
   padding: 63px 0;
   margin-bottom: 20px; }
+  .title-section .title-box {
+    padding: 0 40px; }
 
 .news-list-section {
   margin-top: 25px; }
@@ -14050,35 +14052,36 @@ footer {
 .pagination-section {
   margin-top: 27px; }
 
-.pagination-page li {
-  color: #2d330f !important;
-  opacity: .6;
-  padding: 0;
-  margin: 0 11px 0 12px;
-  font: 18px/18px "Roboto", sans-serif; }
-  .pagination-page li span {
-    color: #2d330f !important; }
-  .pagination-page li.uk-active {
-    opacity: 1; }
-    .pagination-page li.uk-active span {
-      padding: 0 7px 4px;
-      border-bottom: 3px solid #722e77; }
-  .pagination-page li a {
-    font: 18px/18px "Roboto", sans-serif;
-    color: #2d330f !important; }
-    .pagination-page li a:hover {
-      color: #722e77 !important; }
-      .pagination-page li a:hover .uk-icon svg polyline {
-        stroke: #722e77 !important; }
-  .pagination-page li:hover {
-    opacity: 1; }
-
-.pagination-page .uk-icon svg {
-  width: 9px;
-  height: 15px;
-  margin-top: -2px; }
-  .pagination-page .uk-icon svg polyline {
-    stroke: #969987 !important; }
+.pagination-page {
+  margin-left: 0; }
+  .pagination-page li {
+    color: #2d330f !important;
+    opacity: .6;
+    padding: 0;
+    margin: 0 11px 0 12px;
+    font: 18px/18px "Roboto", sans-serif; }
+    .pagination-page li span {
+      color: #2d330f !important; }
+    .pagination-page li.uk-active {
+      opacity: 1; }
+      .pagination-page li.uk-active span {
+        padding: 0 7px 4px;
+        border-bottom: 3px solid #722e77; }
+    .pagination-page li a {
+      font: 18px/18px "Roboto", sans-serif;
+      color: #2d330f !important; }
+      .pagination-page li a:hover {
+        color: #722e77 !important; }
+        .pagination-page li a:hover .uk-icon svg polyline {
+          stroke: #722e77 !important; }
+    .pagination-page li:hover {
+      opacity: 1; }
+  .pagination-page .uk-icon svg {
+    width: 9px;
+    height: 15px;
+    margin-top: -2px; }
+    .pagination-page .uk-icon svg polyline {
+      stroke: #969987 !important; }
 
 /*PAGE NEWS END*/
 /*PAGE REVIEWS START*/
@@ -14146,7 +14149,8 @@ footer {
 /*PAGE REVIEWS END*/
 /*PAGE article-news START*/
 .article-news-section {
-  margin-top: 46px; }
+  margin-top: 46px;
+  overflow: hidden; }
 
 .article-tag {
   margin-bottom: 13px; }
@@ -14273,6 +14277,10 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 13px; }
+
+.comment-item-content p {
+  text-indent: 0 !important;
+  margin-bottom: 10px !important; }
 
 .comment-head-left {
   -webkit-box-flex: 1;
@@ -14713,14 +14721,50 @@ footer {
     padding: 0 0 30px;
     margin: 12px 0; }
   .reviews-list-section {
-    margin-top: 4px; } }
+    margin-top: 4px; }
+  .article-content p {
+    margin-bottom: 18px;
+    text-indent: 20px; }
+  .slide-item img {
+    max-width: 236px; }
+  .btn-more-photos {
+    width: 180px; }
+  .article-slider-actions {
+    margin-top: 28px; }
+  .article-slider {
+    margin-top: 11px; }
+  .article-comments-content {
+    max-width: 100%; }
+  .article-comments-title .title-box h2, .article-comments-title .title-box .h2 {
+    font-size: 20px;
+    line-height: 20px; }
+  .article-comments-title {
+    padding-left: 40px; }
+  .comment-head-img {
+    margin-right: 22px; }
+  .comment-head-username {
+    font-size: 16px;
+    line-height: 16px; }
+  .comment-head-date {
+    font-size: 12px;
+    line-height: 12px; }
+  .article-comments {
+    margin-top: 56px; }
+  .article-comments-title {
+    margin-bottom: 17px; }
+  .article-news-section {
+    margin-top: 6px; }
+  .btn-form-send {
+    width: 180px; }
+  .comments-form-content .btn-green {
+    margin-top: 20px; } }
 
 /* END 1239px */
 /* START 768px */
 @media (max-width: 768px) {
   header, .navbar, .about-house-section,
   .news-home-section, .gallery-home-section, footer,
-  .news-list-section, .reviews-list-section {
+  .news-list-section, .reviews-list-section, .article-news-section {
     padding-left: 15px;
     padding-right: 15px; }
   .wrapper {
@@ -15282,7 +15326,94 @@ footer {
   .review-list-action {
     text-align: right; }
   .review-item {
-    margin: 15px 0; } }
+    margin: 15px 0; }
+  .title-section .title-box {
+    padding: 0 50px; }
+    .title-section .title-box .news-date-text {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 8px; }
+  .title-section.title-child {
+    padding: 13px 0 17px; }
+    .title-section.title-child .title-box {
+      padding: 0 10px; }
+    .title-section.title-child h1 span::before, .title-section.title-child .h1 span::before {
+      display: none; }
+    .title-section.title-child h1, .title-section.title-child .h1 {
+      line-height: 24px; }
+  .article-news-section {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .article-tag {
+    margin-bottom: 8px; }
+  .aricleSlideShow.sliderLoading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .slide-item {
+    max-width: 380px;
+    padding: 0 !important;
+    margin-bottom: 9px; }
+    .slide-item img {
+      max-width: 100%; }
+  .btn-more-photos {
+    width: 205px; }
+  .article-slider-actions {
+    margin-top: 21px; }
+  .article-comments-title {
+    padding-left: 0; }
+  .article-comments-title .title-box h2, .article-comments-title .title-box .h2 {
+    font-size: 15px;
+    line-height: 15px; }
+  .comment-head-img {
+    max-width: 50px;
+    min-width: 50px;
+    margin-right: 10px; }
+  .comment-head-username {
+    font-size: 12px;
+    line-height: 12px; }
+  .comment-list-item {
+    padding-bottom: 17px; }
+  .comment-item-head {
+    margin-bottom: 16px; }
+  .article-comments {
+    margin-top: 40px; }
+  .article-comments-title {
+    margin-bottom: 7px; }
+    .article-comments-title .title-box span {
+      padding: 38px 0 0; }
+  .comments-form-content .uk-input, .comments-form-content .uk-select, .comments-form-content .uk-textarea {
+    padding: 0 8px; }
+  .comments-form-content .uk-form-label {
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 8px; }
+  .comments-form-content .uk-textarea {
+    height: 230px;
+    padding: 8px; }
+  .article-comments-list {
+    margin-bottom: 0; }
+  .article-comments-content .pagination-section {
+    margin-top: 15px; }
+  .comments-form {
+    margin-top: 41px; }
+    .comments-form .article-comments-title {
+      margin-bottom: 26px; }
+  .btn-form-send {
+    width: 205px; }
+  .comments-form-content .btn-green {
+    margin-top: 12px; } }
 
 /* END 767px */
 
