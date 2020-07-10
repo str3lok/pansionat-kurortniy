@@ -13338,7 +13338,8 @@ header {
       padding: 90px 0; } }
   @media screen and (min-width: 1240px) and (min-height: 1000px) {
     .slider-item {
-      padding: 120px 0; } }
+      padding: 120px 0;
+      min-height: 700px; } }
   @media screen and (max-width: 1239px) and (min-height: 700px) {
     .slider-item {
       padding-top: 50px; } }
@@ -13539,7 +13540,13 @@ header {
   color: #191d04;
   font: 16px/16px "Roboto", sans-serif;
   padding: 0;
-  margin-top: -1px; }
+  margin-top: -1px;
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+  -webkit-box-shadow: 0 !important;
+     -moz-box-shadow: 0 !important;
+          box-shadow: 0 !important; }
 
 /*.navbar*/
 .navbar {
@@ -15700,7 +15707,12 @@ footer {
     padding-top: 50px !important;
     padding-bottom: 50px !important; }
   .head-adress {
-    white-space: normal; } }
+    white-space: normal; }
+  .gallery-box picture, .gallery-col,
+  .gallery-home-section .d-flex {
+    display: block; }
+  .btn-view-all {
+    margin: 0 auto; } }
 
 /* END 767px */
 
