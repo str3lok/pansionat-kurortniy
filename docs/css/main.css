@@ -15694,7 +15694,10 @@ footer {
     .video-slider .article-slider-actions {
       margin-top: 0; }
   .screen-one {
-    height: auto !important; } }
+    height: auto !important; }
+  .slider-item {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important; } }
 
 /* END 767px */
 
