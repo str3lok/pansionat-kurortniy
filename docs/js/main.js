@@ -228,7 +228,9 @@ $('.sliderHomeInit').slick({
   slidesToScroll: 1,
   dots: false,
   adaptiveHeight: true,
-  arrows: false
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000
 });
 
 function sliderInit(slider) {
