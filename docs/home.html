@@ -20,7 +20,7 @@
 		<link rel="icon" href="images/touch/favicon-96x96.png" sizes="96x96">
 		<link rel="icon" href="images/touch/android-icon-192x192.png" sizes="196x196">
 		<link rel="manifest" href="images/touch/manifest.json">
-		<link rel="stylesheet" type="text/css" href="css/main.css?v=1594114243200">
+		<link rel="stylesheet" type="text/css" href="css/main.css?v=1594388909605">
 	</head>
 	<body>
 		<header>
@@ -77,8 +77,9 @@
 											</ul>
 										</div>
 									</li>
-									<li><a href="#">Новости</a></li>
+									<li><a href="#">Блог</a></li>
 									<li><a href="#">Медиа</a></li>
+									<li class="xs-visible is-active"><a href="#">Экспертное мнение</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
 							</div>
@@ -86,7 +87,6 @@
 								<div class="head-phone"><a href="tel:+78124561136">+7(812) 456 - 11 - 36</a></div>
 								<div class="head-adress">поселок Песочный, <br> улица Ленинградская, д. 83, корп. 3</div>
 							</div>
-							<div class="uk-navbar-right"><a class="btn-expert" href="#"><span class="icon-idea"></span><span class="btn-expert-text">Экспертное мнение</span></a></div>
 						</nav>
 					</div>
 				</div>
@@ -94,10 +94,22 @@
 		</div>
 		<div class="wrapper">
 			<section class="content-page">
-				<div class="slider-home">
-					<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; pause-on-hover: true; autoplay-interval: 6000">
-						<ul class="uk-slideshow-items">
-							<li><img src="images/slide1.jpg" alt="" uk-cover="">
+				<div class="screen-one">
+					<div class="slider-home">
+						<div class="slider sliderHomeInit">
+							<div class="slider-item" style="background-image: url(images/slide1.jpg); ">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="slide-home-content">
+												<div class="slide-home-title h1">Жить у нас - оставаться в семье!</div>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis  dolore magna aliqua. Ut enim ad minim veniam, quis  dolore magna aliqua. Ut enim ad minim veniam, quis  dolore magna aliqua. Ut enim ad minim veniam, quis  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item" style="background-image: url(images/slide1.jpg); ">
 								<div class="container">
 									<div class="row">
 										<div class="col-xs-12">
@@ -108,44 +120,32 @@
 										</div>
 									</div>
 								</div>
-							</li>
-							<li><img src="images/slide1.jpg" alt="" uk-cover="">
-								<div class="container">
-									<div class="row">
-										<div class="col-xs-12">
-											<div class="slide-home-content">
-												<div class="slide-home-title h1">Жить у нас - оставаться в семье!</div>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="triger-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-3 triger-col">
-								<div class="triger-img triger-img-1"><img class="img-responsive" src="images/sprites/png/triger-1.png" alt="#"></div>
-								<div class="triger-text">Ежедневные <br> занятия и досуг</div>
-							</div>
-							<div class="col-lg-2 triger-col">
-								<div class="triger-img triger-img-2"><img class="img-responsive" src="images/sprites/png/triger-2.png" alt="#"></div>
-								<div class="triger-text">24-часовой <br> уход</div>
-							</div>
-							<div class="col-lg-2 triger-col">
-								<div class="triger-img triger-img-3"><img class="img-responsive" src="images/sprites/png/triger-3.png" alt="#"></div>
-								<div class="triger-text">Специализируемся на деменции</div>
-							</div>
-							<div class="col-lg-2 triger-col">
-								<div class="triger-img triger-img-4"><img class="img-responsive" src="images/sprites/png/triger-4.png" alt="#"></div>
-								<div class="triger-text">Сертификаты <br> и лицензии</div>
-							</div>
-							<div class="col-lg-3 triger-col">
-								<div class="triger-img triger-img-5"><img class="img-responsive" src="images/sprites/png/triger-5.png" alt="#"></div>
-								<div class="triger-text">Государственная <br> поддержка</div>
+					<div class="triger-section">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 triger-col">
+									<div class="triger-img triger-img-1"><img class="img-responsive" src="images/sprites/png/triger-1.png" alt="#"></div>
+									<div class="triger-text">Ежедневные <br> занятия и досуг</div>
+								</div>
+								<div class="col-lg-2 triger-col">
+									<div class="triger-img triger-img-2"><img class="img-responsive" src="images/sprites/png/triger-2.png" alt="#"></div>
+									<div class="triger-text">24-часовой <br> уход</div>
+								</div>
+								<div class="col-lg-2 triger-col">
+									<div class="triger-img triger-img-3"><img class="img-responsive" src="images/sprites/png/triger-3.png" alt="#"></div>
+									<div class="triger-text">Специализируемся на деменции</div>
+								</div>
+								<div class="col-lg-2 triger-col">
+									<div class="triger-img triger-img-4"><img class="img-responsive" src="images/sprites/png/triger-4.png" alt="#"></div>
+									<div class="triger-text">Сертификаты <br> и лицензии</div>
+								</div>
+								<div class="col-lg-3 triger-col">
+									<div class="triger-img triger-img-5"><img class="img-responsive" src="images/sprites/png/triger-5.png" alt="#"></div>
+									<div class="triger-text">Государственная <br> поддержка</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -264,30 +264,16 @@
 									</picture>
 								</div>
 							</div>
-							<div class="col-sm-6 col-xs-12 d-flex">
-								<div class="row d-flex flex-wrap col-two">
-									<div class="col-sm-6 col-xs-12 d-flex">
-										<div class="gallery-box-title"><span>Масленица в Курортном</span><a href="#">Смотреть все фото</a></div>
-									</div>
-									<div class="col-sm-6 col-xs-12 col-xs-12 d-flex">
-										<div class="gallery-box">
-											<picture>
-												<source media="(max-width: 767px)" type="image/jpg" srcset="images/gallery/img4-xs.jpg"><img class="img-responsive" src="images/gallery/img4.jpg" alt="#">
-											</picture>
-										</div>
-									</div>
-									<div class="col-xs-12 d-flex">
-										<div class="gallery-box">
-											<picture><img class="img-responsive" src="images/gallery/img5.jpg" alt="#"></picture>
-										</div>
-									</div>
-								</div>
+						</div>
+						<div class="xs-visible">
+							<div class="gallery-box">
+								<picture>
+									<source media="(max-width: 767px)" type="image/jpg" srcset="images/gallery/img5.jpg"><img class="img-responsive" src="images/dote.png" alt="#">
+								</picture>
 							</div>
-							<div class="col-sm-6 col-xs-12 d-flex gallery-col">
-								<div class="gallery-box">
-									<picture><img class="img-responsive" src="images/gallery/img6.jpg" alt="#"></picture>
-								</div>
-							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="row d-flex flex-wrap">
 							<div class="col-xs-12 text-center flex-justify-center d-flex gallery-action"><a class="btn-green btn-view-all" href="#">Все фото</a></div>
 						</div>
 					</div>
@@ -340,7 +326,7 @@
 			</div>
 		</footer>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
-		<script src="js/vendor.js?v=1594114243201"></script>
-		<script src="js/main.js?v=1594114243201"></script>
+		<script src="js/vendor.js?v=1594388909605"></script>
+		<script src="js/main.js?v=1594388909605"></script>
 	</body>
 </html>

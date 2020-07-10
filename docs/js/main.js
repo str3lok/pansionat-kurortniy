@@ -222,6 +222,14 @@ $('.video-js').on('click', function (e) {
     $(this).prepend('<iframe allowfullscreen="" allow="autoplay" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0&amp;autoplay=1"></iframe>');
   }
 });
+$('.sliderHomeInit').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  adaptiveHeight: true,
+  arrows: false
+});
 
 function sliderInit(slider) {
   $('.' + slider).removeClass('sliderLoading').removeClass('sliderDestroy').addClass('sliderLoaded');
