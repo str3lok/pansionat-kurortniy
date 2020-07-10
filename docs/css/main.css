@@ -14576,7 +14576,8 @@ footer {
     font-size: 12px;
     line-height: 16px;
     padding-left: 28px;
-    margin-left: 0; }
+    margin-left: 0;
+    white-space: nowrap; }
     .head-adress::before {
       width: 13px;
       height: 18px;
@@ -15697,7 +15698,9 @@ footer {
     height: auto !important; }
   .slider-item {
     padding-top: 50px !important;
-    padding-bottom: 50px !important; } }
+    padding-bottom: 50px !important; }
+  .head-adress {
+    white-space: normal; } }
 
 /* END 767px */
 
