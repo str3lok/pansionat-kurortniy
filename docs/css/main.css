@@ -14374,9 +14374,7 @@ footer {
   color: #2d330f;
   font: 18px/24px "Roboto", sans-serif;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; }
+  max-height: 48px; }
   .media-title a {
     color: #2d330f !important;
     font: 18px/24px "Roboto", sans-serif;
@@ -14845,7 +14843,8 @@ footer {
     margin-bottom: 5px; }
   .media-title {
     font-size: 12px;
-    line-height: 16px; }
+    line-height: 16px;
+    max-height: 32px; }
     .media-title a {
       font-size: 12px;
       line-height: 16px; }
@@ -14886,6 +14885,11 @@ footer {
 /* END 768px */
 /* START 767px */
 @media (max-width: 767px) {
+  body {
+    -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+       -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+         -o-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both; }
   header, .navbar, .about-house-section,
   .news-home-section, .gallery-home-section, footer {
     padding-left: 10px;
@@ -15559,7 +15563,7 @@ footer {
     padding-left: 10px;
     padding-right: 10px; }
   .media-title {
-    -webkit-line-clamp: none;
+    max-height: none;
     overflow: visible; }
   .photo-albums-section .pagination-section {
     margin-top: 40px; }
